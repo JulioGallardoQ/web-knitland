@@ -1,0 +1,187 @@
+/*Adding margin, padding and font to everything */
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Montserrat', sans-serif;
+   
+  }
+  /*using the body container to change the background aspect for the shopping.html page */
+  body {
+    background-color: lightgrey;
+    /*background-image: url(images/pexels-pixabay-236028.jpg);*/
+    background-size: cover;
+    
+    
+  }
+  /*Header Navigation bar responsive */
+  .nav-body{
+    display: flex;
+    align-items: center;
+    background-color: rgba(32, 31, 31, 0.688);
+    height: 10vh;
+    z-index: 3;
+  }
+  
+  .nav-bar{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+  }
+  
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /*logo*/
+  .logo {
+    padding-left: 1vh;
+    font-size: 1.5em;
+    color: #348c91;
+  }
+  
+  nav a {
+    font-weight: 600;
+    padding: 10px;
+  }
+  
+  nav a:hover {
+    color: #348c91;
+  }
+  
+  /*Making the navigation bar responsive at the screen view */
+  @media (max-width: 700px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav {
+      padding: 10px 0px;
+    }
+  }
+  /*End of the Navigation bar Responsive*/
+
+  /*blog-body */
+  .blog-body{
+    
+    max-width: 180vh;
+}
+
+h1 {
+    color: #348c91;
+    text-align: left;
+    font-size: 2.6em;
+    margin-top: 1.7vh;
+    margin-bottom: 0px;
+    margin-left: 10vh;
+    padding-bottom: 0px;
+    
+  }
+
+.blog-content{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10vh;
+
+}
+
+img {   
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    height: 60vh;
+    border-radius: 15px 15px 15px 15px;
+    
+   
+  }
+
+  .blog-info{
+    margin-bottom: 13vh;
+     font-weight: 600;
+     color: #348c91;
+
+  }
+
+  .blog-info h2{
+    margin-top: 5vh;
+    font-size: 3em;
+
+  }
+
+  .description-blog{
+
+    color: rgb(9, 9, 9);
+    margin-top: 5vh;
+    margin-right: 5vh;
+    font-weight: 900;
+    font-size: 1.3em;
+    text-align: justify;
+  }
+
+  .slider-container {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+   
+    
+  }
+  
+  .slider { 
+    display: flex;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    height: 120%;
+    width: 100%;
+    position: relative;
+    
+  }
+  
+  .slider img {
+    display: block;
+    aspect-ratio: 16/9;
+    scroll-snap-align: start;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+  @media (max-width: 1180px) {
+
+  
+  
+  }
+  /* Media query for devices with width less than or equal to 600px */
+  @media (max-width: 780px) {
+  }
+  
+  
+  /*slider navigation*/
+  
+  .slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: relative;
+    top: 5em;
+    left: 45%;
+    z-index: 1;
+  }
+  
+  .slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+  }
+  
+  .slider-nav a:hover {
+    opacity: 1;
+  }
+  
+  

@@ -1,0 +1,144 @@
+/*Adding margin, padding and font to everything */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat',sans-serif;
+}
+
+/*using the body container to change the background aspect for the Location.html (home page is using our slider as our background)*/
+body {
+  background-color: rgba(164, 170, 170, 0.823);
+  /*background-image: url(images/pexels-pixabay-236028.jpg);*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+/*Header Navigation bar responsive */
+header {
+  display: flex;
+  position: relative;
+  height: 10vh;
+  background-color: rgba(32, 31, 31, 0.688);
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*logo*/
+.logo {
+  padding-left: 1vh;
+  color: #348c91;
+}
+
+nav a {
+  font-weight: 600;
+  padding: 10px;
+}
+
+nav a:hover {
+  color: #348c91;
+}
+
+/*Making the navigation bar responsive at the screen view */
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    padding: 10px 0px;
+  }
+}
+/*End of the Navigation bar Responsive*/
+
+/*LOCATION HTML CSS -->*/
+
+/*format for the class = location to give format to the elements inside the container*/
+.Location {
+  display: flex;
+  align-items: center;
+  max-width: 980px;
+  height: 100%;
+  margin: 5vh auto 0;
+  overflow: hidden;
+  padding-top: 0px;
+  padding-left: 10vh;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.09);
+  background: #3333337b;
+  font-size: 1em;
+}
+
+/*format to align and modify the aspect of the table which the class name is times(table of opening times)*/
+.times {
+  border-collapse: separate;
+  border-spacing: 8px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: larger;
+  color: #d7d7d7;
+  max-width: 100%;
+  text-align: justify;
+  margin-right: 100px;
+  font-size: 1.1em;
+}
+/*format for the head in the kintland location page*/
+.headLocation {
+  color: #348c91;
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+/*KNITBLOG.HTML CSS -->*/
+.blog {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 300px;
+  margin-top: 200px;
+  color: #020b0bab;
+  font-size: 4em;
+  font-weight: 900;
+  text-align: center;
+
+}
+/*format for the wait message head*/
+.wait-message{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 250px;
+  margin-top: 300px;
+  color: #010707a5;
+  font-size: 3.5em;
+  font-weight: 600;
+  text-align: center;
+
+}
+/*format for the wait message1*/
+.wait-message1{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 630px;
+  margin-top: 450px;
+  color: #000000bc;
+  font-size: 3.5em;
+  font-weight: 600;
+  text-align: center;
+
+}

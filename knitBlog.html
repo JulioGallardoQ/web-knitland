@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--general information about the web settings -->
+    <meta charset="@UTF-8" />
+    <meta name="viewport" content="width= device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>KNITLAND</title>
+    <link rel="stylesheet" type="text/css" href="blog.css" />
+    <!--linking the style.css to upload styles using css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav-body">
+      <header class="nav-bar">
+        <a href="index.html"><h4 class="logo">KNITLAND</h4></a>
+        <nav class="nav-content">
+          <a href="index.html" class="nav">Home</a>
+          <a href="shopping.html" class="nav">Products</a>
+          <a href="Location.html" class="nav">Location</a>
+          <a href="knitBlog.html" class="nav">Knit Blog</a>
+          <a href="Contact.html" class="nav">Contact us</a>
+        </nav>
+      </header>
+    </div>
+    <div class="blog-body">
+      <header class="blog">
+        <!--header box that contains the header and shopping cart classes -->
+        <h1>KNITLAND BLOG</h1>
+        <!--Box container "class=products" for the products items boxes which each box contain all the information sources of the images, price and name of the product-->
+        <div class="blog-content">
+          <div class="blog-info">
+            <!--container for the product information elements-->
+            <h2>Winter is coming to knitland!</h2>
+            <p class="description-blog">
+              Are you a fan of Game of Thrones, the epic fantasy series based on
+              the novels by George R. R. Martin? Do you love the intricate
+              costumes, the stunning landscapes, and the fierce dragons? If so,
+              you might be interested in knitting some items inspired by the
+              show, whether for yourself or as a gift for a fellow fan. In this
+              blog post, I will share with you some of the best Game of Thrones
+              knitting patterns that you can find online, from scarves and hats
+              to blankets and socks. These patterns are suitable for different
+              skill levels and yarn weights, and they feature motifs and symbols
+              from the show, such as the house sigils, the dragon scales, and
+              the famous phrases. So grab your needles and yarn, and let’s get
+              started!
+            </p>
+            <p class="description-blog">
+              One of the most iconic elements of Game of Thrones is the house
+              sigils, the emblems that represent the different noble families of
+              Westeros. Each sigil has a unique animal and a motto, such as the
+              direwolf and “Winter is Coming” for House Stark, or the dragon and
+              “Fire and Blood” for House Targaryen.
+            </p>
+          </div>
+          <!--container box for the item box inside the class products -->
+          <section class="container">
+            <div class="slider-container">
+              <div class="slider">
+                <img
+                  class="firstImg"
+                  id="slider-1"
+                  src="Firelizard.jpeg"
+                  alt=""
+                />
+
+                <img
+                  id="slider-2"
+                  src="winter-is-coming-mittens-e1460843720995.jpg"
+                  alt=""
+                />
+                <img
+                  id="slider-3"
+                  src="winterfell-cowl-direwolf-knitting-gameofthrones_small2.jpg"
+                  alt=""
+                />
+                <img id="slider-4" src="greywindBEAUTY.jpg" alt="" />
+              </div>
+            </div>
+            <div class="slider-nav">
+              <a id="auto1" href="#slider-1"></a>
+              <a id="auto2" href="#slider-2"></a>
+              <a id="auto3" href="#slider-3"></a>
+              <a id="auto4" href="#slider-4"></a>
+            </div>
+          </section>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--general information about the web settings -->
+    <meta charset="@UTF-8" />
+    <meta name="viewport" content="width= device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>KNITLAND</title>
+    <link rel="stylesheet" type="text/css" href="styleShop.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <!--linking the styleshop.css to upload styles using css-->
+  </head>
+  <!--element body that is our container for all the element inside the page-->
+  <body>
+    <div class="nav-body">
+    <header class="nav-bar">
+      <a href="index.html"
+        ><h4 class="logo">
+           KNITLAND</h4></a>
+          
+      <nav class="nav-content">
+        <a href="index.html" class="nav">Home</a>
+        <a href="shopping.html" class="nav">Products</a>
+        <a href="Location.html" class="nav">Location</a>
+        <a href="knitBlog.html" class="nav">Knit Blog</a>
+        <a href="Contact.html" class="nav">Contact us</a>
+      </nav>
+    
+    </header>
+  </div>
+    <div class="shopping-body">
+    <header class="shopping">
+      <!--header box that contains the header and shopping cart classes -->
+      <h1>Knitshop</h1>
+      <!--Header h1 positionated on the left of the web page-->
+      <div class="icon" id="icon-container">
+        <!--container for the information of the icons and all the classes and elements of the shopping cart product-->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="iconbasket"
+        >
+          <!--shopping bag icon information(references and source)-->
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+          />
+        </svg>
+        <div class="product-counter">
+          <span id="product-counterID">0</span>
+        </div>
+        <div class="container-cart-products hidden-cart" id="hid-cart">
+          <div class="row-product hidden">
+          <div class="cart-product">
+            <div class="cart-info-product">
+              <span class="products-cart-cuantity">1</span>
+              <p class="product-cart-name">Knit sweter</p>
+              <span class="price-cart-item"> $50</span>
+            </div>
+            <!--X icon information(references and source) iside the products bag/cart-->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="icon-X"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </div>
+        </div>
+          <!--Box container for the total amount of money of the product inside the shopping cart-->
+          <div class="cart-total hidden">
+            <h3>Total:</h3>
+            <span class="Total-pay">$50</span>
+          </div>
+          <p class="cart-empty">Shopping cart empty!</p>
+        </div>
+      </div>
+    </header>
+    <!--Box container "class=products" for the products items boxes which each box contain all the information sources of the images, price and name of the product-->
+    <div class="products">
+      <div class="item">
+        <!--container box for the item box inside the class products -->
+        <figure>
+          <!--figure container where is the container for the sources image element-->
+          <img src="imgShop/pexels-snapwire-37729.jpg" alt="product" />
+        </figure>
+        <div class="product-info">
+          <!--container for the product information elements-->
+          <h2>Knit Gloves</h2>
+          <p class="description-product">
+            crafted with warmth and style in mind These delightful gloves
+            seamlessly blend comfort with fashion, making them a must-have
+            accessory for chilly days.
+          </p>
+          <p class="price">$45.00</p>
+
+          <button class="add-cart">Add to basket</button>
+        </div>
+      </div>
+      <div class="item">
+        <!--container box for the item box inside the class products -->
+        <figure>
+          <!--figure container where is the container for the sources image element-->
+          <img
+            src="imgShop/pexels-alena-shekhovtcova-6995902 (1).jpg"
+            alt="product"
+          />
+        </figure>
+        <div class="product-info">
+          <!--container for the product information elements-->
+          <h2>Knit turtle neck</h2>
+          <p class="description-product">
+            a cozy essential that seamlessly merges comfort with sophistication.
+            Crafted with meticulous attention to detail, making it a versatile piece for the colder
+            seasons.
+          </p>
+          <p class="price">$115.00</p>
+          <button class="add-cart">Add to basket</button>
+        </div>
+      </div>
+      <div class="item">
+        <!--container box for the item box inside the class products -->
+        <figure>
+          <!--figure container where is the container for the sources image element-->
+          <img
+            src="imgShop/pexels-anete-lusina-4792086 (1).jpg"
+            alt="product"
+          />
+        </figure>
+        <div class="product-info">
+          <!--container for the product information elements-->
+          <h2>Knit Bear Doll</h2>
+          <p class="description-product">
+            whimsical companion crafted with love and care. This charming plush
+            toy brings warmth and comfort with its intricately knit design,
+            making it a delightful addition to any collection.
+          </p>
+          <p class="price">$55.00</p>
+          <button class="add-cart">Add to basket</button>
+        </div>
+      </div>
+      <div class="item">
+        <!--container box for the item box inside the class products -->
+        <figure>
+          <!--figure container where is the container for the sources image element-->
+          <img src="imgShop/pexels-david-lópez-65451.jpg" alt="product" />
+        </figure>
+        <div class="product-info">
+          <!--container for the product information elements-->
+          <h2>Knit Girl Doll</h2>
+          <p class="description-product">
+            Bring joy and warmth into your space with our Knit Girl Doll – a
+            handcrafted treasure designed to inspire playfulness and create
+            lasting memories.
+          </p>
+          <p class="price">$75.00</p>
+          <button class="add-cart">Add to basket</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="bsCart.js"></script>
+    <!--link to the javascript file that contains the shopping cart event-->
+
+  </body>
+</html>

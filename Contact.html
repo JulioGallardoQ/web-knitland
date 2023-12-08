@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head><!--general information about the web settings -->
+    <meta charset="@UTF-8" />
+    <meta name="viewport" content="width= device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>KNITLAND</title>
+    <link rel="stylesheet" type="text/css" href="contact.css" /><!--linking the main.css to upload styles using css-->
+    <!-- GOOGLE FONTs LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME LINK (ICONS IN THE CONTACT US RIGHT SIDE)-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- ANIMATE CSS LINK -->
+
+  </head>
+  <body><!--element body that is our container for all the element inside the page-->
+    <div class="nav-body">
+      <header class="nav-bar">
+        <a href="index.html"
+          ><h4 class="logo">
+             KNITLAND</h4></a>
+            
+        <nav class="nav-content">
+          <a href="index.html" class="nav">Home</a>
+          <a href="shopping.html" class="nav">Products</a>
+          <a href="Location.html" class="nav">Location</a>
+          <a href="knitBlog.html" class="nav">Knit Blog</a>
+          <a href="Contact.html" class="nav">Contact us</a>
+        </nav>
+      
+      </header>
+    </div>
+    <br />
+    <div class="content"><!--Conteiner box that contains all the elements of the contanct form page under the navigation bar-->
+      <h1 class="head-form">Contact <span>Us</span></h1><!--head h1 that contains the header "contanct us" with a span in "us"to give good looking design-->
+      <div class="contact-wrapper"><!--class contact-wrapper which is the container for all the elements inside the contact form box-->
+        <div class="contact-form">
+          <h2>For more information contact us</h2>
+          <form action="http://localhost:3000/submit" method="POST" id="form"><!--form element that help us implement the event listener to validate the inputs and contains all the elements for the form design itselft-->
+            <p><!--element that contains the elements and input for the fullname event when we press a key(fullName function)-->
+              <label>Fullname<span>*</span></label>
+              <input
+                type="text"  name="fullName"
+                onkeypress="return fullNameEvent(event);"
+                id="full-Name" 
+              />
+            </p>
+            <p><!--element that contains the elements and input for the email event when we press a key(emailFormat function)-->
+              <label for="Email">Email<span>*</span></label
+              ><input
+                type="text" name="email"
+                onkeypress="return emailFormat(event);"
+                id="Email"
+                placeholder="knitland@example.com"
+              />
+            </p>
+            <p><!--element that contains the elements and input that takes the value when we down a key (phoneNumber function)-->
+              <label>Phone<span>*</span></label
+              ><input 
+                onkeydown="phoneNumber()" name="phone"
+                id="phone-Number"
+                placeholder="e.g. 123-456-7890"
+              />
+            </p>
+            <p><!--element that includes  the Affair  element-->
+              <label for="Affair">Affair</label
+              ><input type="text" name="Affair" id="Affair" />
+            </p>
+            <p><!--element that includes the Message area element (3 rows in a text area)-->
+              <label for="Message">Message</label
+              ><textarea name="Message" id="Message" rows="3"></textarea>
+            </p>
+            
+            <div><!--container of the warning that are showing that you are not submit a valid information when press the button, linked by ID in the js file -->
+              <div class="warnings" id="warnings"></div>
+              <button type="submit" value="submit">Send</button> 
+              <a class="policy" href="privacyPolicy.html">Note: Clicking on send button you are agree with our terms, conditions and privacy Policy</a>
+            </div>      
+            
+          </form>
+           
+        </div>
+
+        <div class="contact-info"><!--Righ side of the contact wrapper that contains all the elements with the information  of the bussenes -->
+          <h3>More Info</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Amiens street 1</li><!--list element which is using an icon referenced in i element with the class name  and the link in font awesome-->
+            <br />
+            <li><i class="fas fa-phone"></i> (+353) 83 088 5154</li><!--list element which is using an icon referenced in i element with the class name  and the link in font awesome-->
+            <br />
+            <li>
+              <i class="fas fa-envelope-open-text"></i> contact@knitland.com<!--list element which is using an icon referenced in i element with the class name  and the link in font awesome-->
+            </li>
+            <br />
+          </ul>
+          <p><!--paragraph element that contains the vision of the webpage inside the righ grid of the contact us form-->
+            Do not hesitate to contact us, remember that we are not just a store, we are your community, we are here for you!
+          </p>
+          <p>knitland.ie</p> <!--paragraph element that contains the webpage reference  inside the righ grid of the contact us form-->
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
